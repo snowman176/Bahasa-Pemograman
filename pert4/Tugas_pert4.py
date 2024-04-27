@@ -1,3 +1,7 @@
+# Nama : Mohammad Adeeb Ekananda Suhatman
+# Nim : 20230801405
+
+
 # Fungsi Perkalian
 def perkalian(a, b):
     return a * b
@@ -44,3 +48,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    
