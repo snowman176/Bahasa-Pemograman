@@ -23,14 +23,18 @@ def pengurangan(a, b):
 
 # Menu Program
 def main():
-    print("Menu:")
+    print("Pilih Menu Aritmetika Dasar:")
     print("1. Perkalian")
     print("2. Pembagian")
     print("3. Penjumlahan")
     print("4. Pengurangan")
+    print("5. Keluar!!")
 
-    pilihan = input("Pilih Menu (1/2/3/4): ")
-
+    pilihan = input("Pilih Menu (1/2/3/4/5): ")
+    
+    if pilihan == '5':
+        print("Terima kasih!")
+    
     if pilihan in ['1', '2', '3', '4']:
         angka1 = float(input("Masukkan angka pertama: "))
         angka2 = float(input("Masukkan angka kedua: "))
@@ -43,6 +47,7 @@ def main():
             print("Hasil penjumlahan:", penjumlahan(angka1, angka2))
         elif pilihan == '4':
             print("Hasil pengurangan:", pengurangan(angka1, angka2))
+            
     else:
         print("Pilihan tidak valid!")
 
